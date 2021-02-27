@@ -1,0 +1,38 @@
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  height: 86px;
+  line-height: 86px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+
+  .header__logo, .header__logo a, .header__logo a:hover {
+    color: var(--brand);
+    font-weight: bolder;
+  }
+
+  .header__menu {
+    border: none;
+  }
+
+  .header__upload {
+    align-items: flex-end;
+
+    button {
+      height: auto;
+      border-width: 2px;
+      font-weight: bolder;
+      color: var(--brand);
+      padding: 16px 24px;
+
+      span {
+        font-size: large;
+      }
+    }
+  }
+}
+
+
