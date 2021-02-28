@@ -35,7 +35,11 @@ const MainPage = () => {
 
   return (
     <>
-      <Row justify="center" className="mt-6 figure-background">
+      <Row
+        justify="center"
+        gutter={{xs: 8, sm: 16, md: 24, lg: 32}}
+        className="mt-6 figure-background"
+      >
         <Col span={24}>
           <Title align="center">
             Посмотри свою квартиру в виртуальной реальности
@@ -63,12 +67,13 @@ const MainPage = () => {
       <Row
         id="ables"
         justify="center"
+        gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
         className="mt-6 pt-6 gray-background figure-background"
       >
         <Col span={24}>
-          <Title align="center">Возможности редактора</Title>
-          <Row justify="center">
-            <Col span={8}>
+          <Title align="center" className="mb-5">Возможности редактора</Title>
+          <Row justify="center" gutter={{ xs: 8, md: 24}}>
+            <Col className="mb-5">
               <Card
                 style={{width: 240}}
                 cover={<img alt="Возможность 1" src={able1} />}
@@ -76,7 +81,7 @@ const MainPage = () => {
                 <Meta description="Создать 3D-модель квартиры, офиса, кафе или магазина" />
               </Card>
             </Col>
-            <Col span={8}>
+            <Col className="mb-5">
               <Card
                 style={{width: 240}}
                 cover={<img alt="Возможность 2" src={able2} />}
@@ -84,7 +89,7 @@ const MainPage = () => {
                 <Meta description="Встраивать проекты и виртуальные туры на сторонние сайты" />
               </Card>
             </Col>
-            <Col span={8}>
+            <Col className="mb-5">
               <Card
                 style={{width: 240}}
                 cover={<img alt="Возможность 3" src={able3_1} />}

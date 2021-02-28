@@ -16,8 +16,9 @@
   background-color: var(--white);
 }
 
+
 .ant-row {
-  padding: 30px 50px;
+  padding: 1rem 2rem;
 }
 
 .figure-background {
@@ -43,7 +44,7 @@ $unit: 'rem'; // Feel free to change the unit.
   $i: 0;
   @while $i <= $max {
     #{$className + $i} {
-      #{$styleName}: #{$i + $unit};
+      #{$styleName}: #{$i + $unit} !important;
     }
     $i: $i + $offset;
   }

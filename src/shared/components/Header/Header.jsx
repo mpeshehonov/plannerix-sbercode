@@ -40,9 +40,9 @@ const Header = () => {
           <a href="#how">Как это работает</a>
         </Menu.Item>
       </Menu>
-      <Upload className="header__upload" {...props}>
-        <Button icon={<UploadOutlined />}>
-          Загрузить свой план
+      <Upload className="header__upload upload" {...props}>
+        <Button className="upload__button" icon={<UploadOutlined />}>
+          <span className="upload__text">Загрузить свой план</span>
         </Button>
       </Upload>
     </Layout.Header>

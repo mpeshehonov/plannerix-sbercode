@@ -12,24 +12,32 @@ header.header {
   .header__logo, .header__logo a, .header__logo a:hover {
     color: var(--brand);
     font-weight: bolder;
+    white-space: nowrap;
   }
 
   .header__menu {
     border: none;
   }
 
-  .header__upload {
+  .header__upload.upload {
     align-items: flex-end;
 
-    button {
+    .upload__button {
       height: auto;
       border-width: 2px;
       font-weight: bolder;
       color: var(--brand);
-      padding: 16px 24px;
 
-      span {
-        font-size: large;
+      @media screen and (min-width: 768px) {
+        padding: 1rem 2rem;
+      }
+
+      .upload__text {
+        display: none;
+        @media screen and (min-width: 768px) {
+          display: inline;
+          font-size: large;
+        }
       }
     }
   }
